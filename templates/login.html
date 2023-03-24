@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Page</title>
+	<title>Sead reset password</title>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/login.css') }}">
+	
 </head>
 <body>
-	<h1>Login Page</h1>
-	<form action="/submit" method="POST">
+	<style>
+		h1 {
+    color: red;
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 50%;
+		position: absolute;
+  		right: 500px;
+		top: 250px;
+	}
+	</style>
+
+<form action="/submit" method="POST">
+		<h1>Sead reset password</h1>
 		<label for="username">Username:</label>
-		<input type="text" id="username" name="username"><br><br>
+		<input type="text" id="username" name="username" required><br><br>
 		<label for="username">Email:</label>
-		<input type="text" id="email" name="email"><br><br>
+		<input type="text" id="email" name="email" required><br><br>
 		<input type="submit" value="Submit">
 	</form>
 </body>

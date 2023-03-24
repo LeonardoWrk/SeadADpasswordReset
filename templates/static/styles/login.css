@@ -1,0 +1,10 @@
+body {
+    background-color: red;
+}
+
+* {
+    justify-content: center;
+}
+h1 {
+    color: red;
+}
